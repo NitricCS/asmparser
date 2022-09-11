@@ -3,7 +3,7 @@
 Converts ASM Text segment log into HDL program memory format.
 
 Parser takes the QtSpim Text Segment log file and formats it line by line.
-To get correct results, remove the head from the log, starting it from the actual real program that needs to be in memory (e.g. remove assembly hardcoded inputs).
+To get correct results, remove the head from the log, starting it from the actual real program that needs to be in memory (e.g. remove system instructions and assembly hardcoded inputs).
 
 Parser also automatically substitutes the /jr $ra/ instruction with the correct /beq/, adds the dummy inst and the endless loop at the beginning.
 
